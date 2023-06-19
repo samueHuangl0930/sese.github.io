@@ -1,0 +1,53 @@
+@import url("../../assets/style/theme.less");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-weight: 500;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#Home {
+    min-height: calc(100vh - 131px);
+
+    .contain {
+        height: 100%;
+
+        .ant-carousel {
+            .slick-dots li.slick-active button:before {
+                display: none;
+            }
+        }
+
+        .area {
+            height: 200px;
+            background-color: rgb(137, 161, 161);
+
+        }
+
+        .bannerBlock {
+            display: flex;
+            justify-content: center;
+            align-content: space-around;
+            height: 100%;
+
+            .imgBlock {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+}
